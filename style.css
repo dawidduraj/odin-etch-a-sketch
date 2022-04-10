@@ -50,3 +50,7 @@ button:hover{
 button:active{
     transform: scale(0.9);
 }
+
+.colored{
+    background-color: #2b2b2b;
+}
