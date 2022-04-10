@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    height: 100vh;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
