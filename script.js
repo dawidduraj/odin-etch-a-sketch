@@ -5,6 +5,9 @@ const slider = document.querySelector("#gridSizeSlider");
 
 let gridSize = 16;
 
+//initial grid creation
+createGrid(gridSize);
+
 slider.oninput = () => {
     gridSize = slider.value;
     sizeDisplay.textContent = `Grid Size: ${gridSize}`
@@ -13,4 +16,8 @@ slider.oninput = () => {
 
 function createGrid(size){
     container.style.setProperty("--grid-size", size);
+    for (let i = 0; i < (size * size); i++){
+        let cell = document.createElement("div");
+        container.appendChild(cell);
+    }
 }
